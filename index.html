@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div id="header_text">
+                <img src="MAD__1_-removebg-preview.png" class="logo">
+                <p class="paragrafo">tempo rimasto(non ho ancora voglia di programmarlo, quello è difficile lol)</p>
+                <h1>IN-MOBILIT&Agrave</h1>
+            </div>
+            <script>
+                const otherElement = document.querySelector('.logo');
+                const rect = otherElement.getBoundingClientRect();
+        
+                const overlay = document.querySelector('.paragrafo');
+                overlay.style.top = `${rect.top}px`;
+                overlay.style.left = `${rect.left}px`;
+            </script>
+        </header>
+        <footer>
+        <div class="francesco toti">
+            © 2024 Studenti SilvioCeccato.
+           Crediti: Pratham Madaan, Giordano
+        </div>
+        </footer>
+    </body>
+</html>
