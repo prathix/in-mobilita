@@ -1,0 +1,45 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <header>
+            <div id="header_text">
+                <img src="{{ url_for('static', filename='images/MAD__1_-removebg-preview.png') }}" class="logo">
+                <p class="paragrafo">
+                    Tempo rimasto: <span id="countdown"></span>
+                </p>
+
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+                <script>
+                    $(document).ready(function() {
+                        function updateCountdown() {
+                            $.getJSON('/update_countdown', function(data) {
+                                $('#countdown').html(data.days + ' days, ' + data.hours + ' hours, ' + data.minutes + ' minutes, ' + data.seconds + ' seconds');
+                            });
+                        }
+                        updateCountdown();
+                        setInterval(updateCountdown, 1000);
+                    });
+                </script>
+                <h1>IN-MOBILIT&Agrave</h1>
+            </div>
+            <script>
+                const otherElement = document.querySelector('.logo');
+                const rect = otherElement.getBoundingClientRect();
+        
+                const overlay = document.querySelector('.paragrafo');
+                overlay.style.top = `${rect.top}px`;
+                overlay.style.left = `${rect.left}px`;
+            </script>
+        </header>
+        <footer>
+        <div class="francesco toti">
+            © 2024 Studenti SilvioCeccato.
+           Crediti: Pratham Madaan, Giordano
+        </div>
+        </footer>
+    </body>
+</html>
