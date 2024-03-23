@@ -17,7 +17,7 @@
                     $(document).ready(function() {
                         function updateCountdown() {
                             $.getJSON('/update_countdown', function(data) {
-                                $('#countdown').html(data.days + ' days, ' + data.hours + ' hours, ' + data.minutes + ' minutes, ' + data.seconds + ' seconds');
+                                $('#countdown').html(data.days + ' giorni, ' + data.hours + ' ore, ' + data.minutes + ' minuti, ' + data.seconds + ' secondi');
                             });
                         }
                         updateCountdown();
@@ -35,11 +35,47 @@
                 overlay.style.left = `${rect.left}px`;
             </script>
         </header>
-        <footer>
-        <div class="francesco toti">
-            © 2024 Studenti SilvioCeccato.
-           Crediti: Pratham Madaan, Giordano
+        <div class="cosa">
+            <h2>Cos'è IN-MOBILIT&Agrave?</h2>
+            <p>Questo è un progetto dove stiamo partecipando per la creazione di un'aula scolastica all'aperto, stiamo collaborando con gli architetti (inserisci nome architetti) per riuscirci.</p>
         </div>
+        <script>
+            // Function to check if an element is fully in viewport
+            function isElementFullyInViewport(el) {
+            var rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+            }
+
+            // Function to handle scroll event
+            function handleScroll() {
+            var elementsToShow = document.querySelectorAll('.cosa');
+            elementsToShow.forEach(function(element) {
+                if (isElementFullyInViewport(element)) {
+                element.classList.add('visible');
+                } else {
+                element.classList.remove('visible');
+                }
+            });
+            }
+
+            // Add scroll event listener
+            window.addEventListener('scroll', handleScroll);
+
+            // Initial check in case elements are already in viewport
+            handleScroll();
+
+        </script>
+        <footer>
+        <div>
+            © 2024 Studenti SilvioCeccato.<br>
+           Crediti: <br>Programmatore principale:Pratham Madaan, <br>Altri programmatori:Giordano
+        </div>
+        <br>
         </footer>
     </body>
 </html>

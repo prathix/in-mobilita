@@ -79,13 +79,38 @@ header::before {
 }
 
 footer {
-    padding-top: 10px;
-    padding-right: 15px;
-    padding-left: 15px;
+    margin-top:3vh;
+    padding-top: 1vw;
+    padding-right: 1vw;
+    margin-left: 1vw;
     width:100vw;
     height:15vh;
     border-color: black;
     z-index:1;
     display: flex;
     align-items: center;
+}
+
+.cosa{
+    margin-left: 1vw;
+}
+.cosa.visible {
+    padding:0;
+    opacity:0;
+    transition: opacity 0.5s, transform 0.5s;
+    transform: translateY(-10%);
+    animation-name: slideInCosa;
+    animation-duration: 1s;
+    animation-delay: 0,001s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideInCosa {
+    from {
+      transform: translateY(-10%);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
 }
