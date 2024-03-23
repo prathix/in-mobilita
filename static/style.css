@@ -93,6 +93,7 @@ footer {
 
 .cosa{
     margin-left: 1vw;
+    font-size: larger;
 }
 .cosa.visible {
     padding:0;
