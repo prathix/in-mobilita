@@ -1,0 +1,5 @@
+[build]
+  command = "python main.py"
+
+[build.environment]
+  FLASK_ENV = "production"
