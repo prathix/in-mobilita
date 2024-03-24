@@ -5,4 +5,4 @@
 [[plugins]]
   module = "@netlify/build-python"
   entrypoint = "main.py"
-
+  versiom = "latest"
