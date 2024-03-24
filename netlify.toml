@@ -1,5 +1,9 @@
 [build]
-  command = "python main.py"
+  command = "python -m pip install -r requirements.txt"
+  publish = "."
 
-[build.environment]
-  FLASK_ENV = "production"
+[[plugins]]
+  # Assuming your entrypoint script is called app.py
+  module = "@netlify/build-python"
+  # Path to your WSGI script relative to the build directory (usually '.')
+  entrypoint = "app.py"
