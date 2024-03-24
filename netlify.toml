@@ -3,6 +3,7 @@
   publish = "."
 
 [[plugins]]
-  module = "@netlify/build-python"
-  entrypoint = "main.py"
-  versiom = "latest"
+  package = "netlify-plugin-one"
+
+    [plugins.inputs]
+    port = 80
