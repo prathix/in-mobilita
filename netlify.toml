@@ -3,7 +3,6 @@
   publish = "."
 
 [[plugins]]
-  # Assuming your entrypoint script is called app.py
   module = "@netlify/build-python"
-  # Path to your WSGI script relative to the build directory (usually '.')
   entrypoint = "main.py"
+
