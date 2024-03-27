@@ -7,7 +7,7 @@
     <body>
         <header>
             <div id="header_text">
-                <img src="{{ url_for('static', filename='images/MAD__1_-removebg-preview.png') }}" class="logo">
+                <img src="{{ url_for('static', filename='images/MAD__1_-removebg-preview.png') }}" class="logo" alt="logo">
                 <p class="paragrafo">
                     Tempo rimasto: <span id="countdown"></span>
                 </p>
@@ -35,45 +35,63 @@
                 overlay.style.left = `${rect.left}px`;
             </script>
         </header>
-        <div class="cosa">
-            <h2>Cos'è IN-MOBILIT&Agrave?</h2>
-            <p>Questo è un progetto dove stiamo partecipando per la creazione di un'aula scolastica all'aperto, stiamo collaborando con gli architetti (inserisci nome architetti) per riuscirci.</p>
+        <div class="parte_principale">
+            <h2 class="partner">Partner:</h2>
+            <p>- referente mobilità: civi&co e veloCittà<br>
+                - referente Mobility Corner: Camposaz<br>
+                - Vicenza: Arci Servizio Civile<br>
+                - Schio: Samarcanda coop. sociale<br>
+                - Montecchio: Piano Infinito<br>
+                - Thiene: Radicà cooperativa sociale
+            </p> 
+            <br>
+            <h2 class="cose">Cos'è in-mobilità?</h2>
+            <p>Questo è un progetto dove stiamo partecipando per la creazione di un'aula scolastica all'aperto, che chiameremo mobility corner, stiamo collaborando con gli architetti del gruppo amposaz per riuscirci.</p>
         </div>
         <script>
             // Function to check if an element is fully in viewport
             function isElementFullyInViewport(el) {
-            var rect = el.getBoundingClientRect();
-            return (
-                rect.top >= 0 &&
-                rect.left >= 0 &&
-                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-            );
+                var rect = el.getBoundingClientRect();
+                return (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                );
             }
-
+        
             // Function to handle scroll event
-            function handleScroll() {
-            var elementsToShow = document.querySelectorAll('.cosa');
-            elementsToShow.forEach(function(element) {
-                if (isElementFullyInViewport(element)) {
-                element.classList.add('visible');
-                } else {
-                element.classList.remove('visible');
-                }
-            });
+            function handleScroll(elementss) {
+                var elementsToShow = document.querySelectorAll(elementss);
+                elementsToShow.forEach(function(element) {
+                    if (isElementFullyInViewport(element)) {
+                        element.classList.add('visible');
+                    } else {
+                        element.classList.remove('visible');
+                    }
+                });
             }
-
+        
             // Add scroll event listener
-            window.addEventListener('scroll', handleScroll);
-
+            window.addEventListener('scroll', function() {
+                handleScroll('.partner');
+                handleScroll('.cose');
+            });
+        
             // Initial check in case elements are already in viewport
-            handleScroll();
-
+            handleScroll('.partner');
+            handleScroll('.cose');
         </script>
+        
+        <br>
         <footer>
         <div>
-            © 2024 Studenti SilvioCeccato.<br>
-           Crediti: <br>Programmatore principale:Pratham Madaan, <br>Altri programmatori:Giordano
+            <br>
+            <p>
+                © 2024 Studenti SilvioCeccato.<br>
+                Crediti: <br>Programmatore principale:Pratham Madaan, <br>Altri programmatori:Giordano
+            </p>
+            <img src="/static/images/piano_infinito.jpg" alt="logo piano infinito" id="logo_piano_infinito">
         </div>
         <br>
         </footer>
