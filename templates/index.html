@@ -6,6 +6,18 @@
     </head>
     <body>
         <header>
+            <div class="div-nav">
+                <a href="#" class="logo" >LOGO</a>
+                    <nav class="navbar">
+                        <!--Sezioni-->
+                            <a class="" href="#" onclick="scrollToPartner()">Partner</a>
+                            <a class="" href="#" onclick="scrollToCose()">Cos'è</a>
+                            <a class="" href="">a</a>
+                            <a class="" href="">a</a>
+                            <a class="" href="">a</a>
+                            <a class="" href="">a</a>
+                </nav>
+            </div>
             <div id="header_text">
                 <img src="{{ url_for('static', filename='images/MAD__1_-removebg-preview.png') }}" class="logo" alt="logo">
                 <p class="paragrafo">
@@ -14,6 +26,14 @@
 
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script>
+                    function scrollToCose() {
+                    var coseElement = document.querySelector('.cose');
+                    coseElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    function scrollToPartner() {
+                    var coseElement = document.querySelector('.partner');
+                    coseElement.scrollIntoView({ behavior: 'smooth' });
+                    }
                     $(document).ready(function() {
                         function updateCountdown() {
                             $.getJSON('/update_countdown', function(data) {
@@ -35,7 +55,7 @@
                 overlay.style.left = `${rect.left}px`;
             </script>
         </header>
-        <div class="parte_principale">
+        <div class="parte_principalewd">
             <h2 class="partner">Partner:</h2>
             <p>- referente mobilità: civi&co e veloCittà<br>
                 - referente Mobility Corner: Camposaz<br>
