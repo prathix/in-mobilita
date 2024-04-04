@@ -55,7 +55,30 @@
                 overlay.style.left = `${rect.left}px`;
             </script>
         </header>
-        <div class="parte_principalewd">
+        <div class="parte_principale">
+            <div class="div_lezioni">
+                <h2>Lezioni</h2>
+            <ul class="lezioni">
+                <li onclick="lezioni()">1
+                    <p>Giornata bella</p>
+                </li>
+                <li>2
+                    <p>Giornata bella</p>
+                </li>
+                <li>3
+                    <p>Giornata bella</p>
+                </li>
+                <li>4
+                    <p>Giornata bella</p>
+                </li>
+                <li>5
+                    <p>Giornata bella</p>
+                </li>
+                <li>6
+                    <p>Giornata bella</p>
+                </li>
+            </ul>
+            </div>
             <h2 class="partner">Partner:</h2>
             <p>- referente mobilità: civi&co e veloCittà<br>
                 - referente Mobility Corner: Camposaz<br>
@@ -66,7 +89,7 @@
             </p> 
             <br>
             <h2 class="cose">Cos'è in-mobilità?</h2>
-            <p>Questo è un progetto dove stiamo partecipando per la creazione di un'aula scolastica all'aperto, che chiameremo mobility corner, stiamo collaborando con gli architetti del gruppo amposaz per riuscirci.</p>
+            <p>Questo è un progetto dove stiamo partecipando per la creazione di un'aula scolastica all'aperto,<br> che chiameremo mobility corner, stiamo collaborando con gli architetti del gruppo amposaz <br>per riuscirci.</p>
         </div>
         <script>
             // Function to check if an element is fully in viewport
@@ -97,10 +120,15 @@
                 handleScroll('.partner');
                 handleScroll('.cose');
             });
-        
-            // Initial check in case elements are already in viewport
             handleScroll('.partner');
             handleScroll('.cose');
+            function lezioni(){
+            var boxElement = document.querySelector('.box');
+  
+            boxElement.style.width = '200px';
+            boxElement.style.height = '200px';
+            boxElement.style.backgroundColor = 'blue';
+            }
         </script>
         
         <br>
@@ -109,7 +137,7 @@
             <br>
             <p>
                 © 2024 Studenti SilvioCeccato.<br>
-                Crediti: <br>Programmatore principale:Pratham Madaan, <br>Altri programmatori:Giordano
+                Crediti: <br>Programmatore principale:Pratham Madaan 2BI, <br>Altri programmatori:Giordano Peressini 2AI
             </p>
             <img src="/static/images/piano_infinito.jpg" alt="logo piano infinito" id="logo_piano_infinito">
         </div>
