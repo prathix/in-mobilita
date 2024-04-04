@@ -85,9 +85,9 @@ footer {
     margin-top:3vh;
     padding-top: 1vw;
     padding-right: 1vw;
-    margin-left: 1vw;
     width:100vw;
     height:15vh;
+    margin-left: 1vw;
     border-color: black;
     z-index:1;
     display: flex;
