@@ -167,29 +167,5 @@ footer {
     background-color: #81d82e;
     width:40vw;
     top:50vw;
-}
-
-.div_lezioni h2{
-    background-color: #30a30a;
-    text-align: center;
-}
-
-.div_lezioni ul{
-    width:fit-content;
-}
-
-.div_lezioni p{
-    margin-left: 0;
-    opacity:0;
-}
-.lezioni{
-    list-style-type: none;
-    display: flex;
-    flex-direction: row;
-}
-li{
-    display:inline;
-}
-li:hover{
-    background-color: darkgreen;
+    height:35vh;
 }
