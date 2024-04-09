@@ -158,7 +158,11 @@ footer {
     color: black;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 40;
+    margin-right: 40;
+}
+
+.div-nav{
+    text-align: right;
 }
 .div_lezioni{
     position:absolute;
@@ -168,3 +172,43 @@ footer {
     top:50vw;
     height:35vh;
 }
+.placeholder {
+    display: flex;
+    padding-left: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.container_placeholder {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+
+.container_placeholder_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.container_placeholder_img {
+    flex: 1;
+    margin-right: 40px;
+    overflow: hidden;
+}
+
+.img_placeholder {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container_placeholder_text {
+    flex: 1;
+}
+
+#big-bro{
+    line-height: 7em;
+}
+
