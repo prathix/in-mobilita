@@ -26,9 +26,13 @@ header::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.7), transparent), url(images/background.jpg);
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.2), transparent), url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     opacity: 0.9;
     z-index: -1;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.1); 
 }
 
 #header_text{
@@ -138,7 +142,7 @@ footer {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background-color: #B9F67E;
+    background-color: #a5f25d;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -167,7 +171,7 @@ footer {
 .div_lezioni{
     position:absolute;
     left: 50vw;
-    background-color: #81d82e;
+    background-color: #a5f25d;
     width:40vw;
     top:50vw;
     height:35vh;
@@ -186,4 +190,7 @@ footer {
 
 #argomenti{
     margin-left: 1vw;
+}
+.text_partner {
+    text-align: center;
 }
