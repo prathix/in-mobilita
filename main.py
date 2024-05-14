@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def countdown():
-    target_day = datetime.datetime(2024, 6, 6, 9, 0)
+    target_day = datetime.datetime(2024, 6, 6, 12, 0)
     remaining_time = target_day - datetime.datetime.now()
     countdown_dict = {
         'days': remaining_time.days,
