@@ -87,18 +87,34 @@ header::before {
 
 
 
-@media(max-width: 800px){
+@media(orientation: portrait){
   #header_text h1{
     font-size: 10vh;
   }
 }
-@media(max-width: 400px){
+@media(orientation:portrait){
   #header_text h1{
     font-size: 7.5vh;
   }
 }
 
-
+@media (orientation: portrait){
+  h1{
+    display: none;
+  }
+  .logo{
+    min-width: 80vw;
+  }
+  .paragrafo{
+    font-size: 6vw;
+  }
+  #countdown{
+    font-size: 6vw;
+  }
+  .sidebar{
+    width: 100%;
+  }
+}
 
 footer {
     margin-top:3vh;
@@ -110,7 +126,7 @@ footer {
     border-color: black;
     z-index:1;
     display: flex;
-    align-items: center;
+    text-align: center;
 }
 
 .parte_principale{
@@ -166,6 +182,7 @@ nav{
     align-items: center;
     z-index: 100;
     text-align: right;
+    height: 10vh;
   }
   nav ul{
     width: 100%;
@@ -196,7 +213,7 @@ nav{
     top: 0; 
     right: 0;
     height: 100vh;
-    width: 250px;
+    width: 50vw;
     background-color: rgba(255, 255, 255, 0.15);
     backdrop-filter: blur(12px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
@@ -215,17 +232,12 @@ nav{
   .menu-button{
     display: none;
   }
-  @media(max-width: 800px){
+  @media(orientation: portrait){
     .hideOnMobile{
       display: none;
     }
     .menu-button{
       display: block;
-    }
-  }
-  @media(max-width: 400px){
-    .sidebar{
-      width: 100%;
     }
   }
 
@@ -256,12 +268,14 @@ nav{
     margin-left: 1vw;
 }
 
-.cose{
+.cose_div{
     margin-left: 1vw;
+    text-align: center;
 }
 
 #argomenti{
     margin-left: 1vw;
+    text-align: center;
 }
 .text_partner {
     text-align: center;
