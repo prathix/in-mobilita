@@ -27,5 +27,14 @@ def update_countdown():
     }
     return jsonify(countdown_dict)
 
+@app.route('/home')
+def homes():
+    return render_template('index.html')
+
+@app.route('/lezioni_partner')
+def lezioni_partner():
+    return render_template('other-stuff.html')
+
+
 if __name__ == '__main__':
     app.run(debug=True)
