@@ -170,7 +170,7 @@ footer {
 
 nav{
     background-color: #a5f25d;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -199,6 +199,7 @@ nav{
     display: flex;
     align-items: center;
     color: black;
+    font-size: 18px;
   }
   nav a:hover{
     background-color: #f0f0f0;
@@ -278,3 +279,4 @@ nav{
 .text_partner {
     text-align: center;
 }
+
