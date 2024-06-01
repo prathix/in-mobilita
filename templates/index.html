@@ -12,8 +12,8 @@
                 <ul class="sidebar">
                   <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
                   <li><a href="#" onclick="scrollToCose()">Cos'è</a></li>
-                  <li><a href="#" onclick="scrollToGiornate()">Giornate</a></li>
-                  <li><a href="#" onclick="scrollToPartner()">Partner</a></li>
+                  <li><a href="#" onclick="location.href='{{ url_for('lezioni_partner') }}'">Giornate</a></li>
+                  <li><a href="#" onclick="location.href='{{ url_for('lezioni_partner') }}'">Partner</a></li>
                 </ul>
                 <ul>
                   <li><a href="#">In-Mobilitá</a></li>
@@ -126,7 +126,7 @@
     <br id="big-bro">
       <p>
         © 2024 Studenti SilvioCeccato.<br>
-        Crediti: <br>Programmatore principale:Pratham Madaan 2BI, <br>Altri programmatori:Giordano Peressini 2AI<br> Logo: Samuele Todesco, 2BI
+        Crediti: <br>Programmatore principale:Pratham Madaan 2BI, <br>Altri programmatori:Giordano Peressini 2AI, <br>Referente: Professor Gianmario Pocchettini<br> Logo: Samuele Todesco, 2BI
       </p>
       <img src="/static/images/piano_infinito.jpg" alt="logo piano infinito" id="logo_piano_infinito">
     </div>

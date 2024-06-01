@@ -12,7 +12,7 @@
             <nav>
                 <ul class="sidebar">
                   <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
-                  <li><a href="#" onclick="scrollToCose()">Cos'è</a></li>
+                  <li><a onclick="location.href='{{ url_for('homes') }}'">Cos'è</a></li>
                   <li><a href="#" onclick="scrollToGiornate()">Giornate</a></li>
                   <li><a href="#" onclick="scrollToPartner()">Partner</a></li>
                 </ul>
@@ -150,7 +150,10 @@
         </script>
 
         <br id="big-bro">
-
+        <div id="aula">
+          <h2>Aula</h2>
+          <img src="{{ url_for('static', filename='images/logo.png') }}">
+        </div>
 <div class="text_partner">
     <div class="parte_principale">
       <h2 class="partner">Partner scolastici</h2>
