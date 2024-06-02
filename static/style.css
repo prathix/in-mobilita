@@ -283,3 +283,12 @@ nav{
 #aula{
   text-align: center;
 }
+
+.cose_img_div{
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0 auto;
+  width: 100vw;
+  margin-left: 25vw;
+}
