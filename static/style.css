@@ -288,7 +288,7 @@ nav{
 
 .container1 {
   max-width: 1224px;
-  width: 90%;
+  width: 80%;
   margin: auto;
   padding: 40px 0;
 }
@@ -313,7 +313,15 @@ nav{
 }
 
 @media (orientation: portrait) {
+.container1 {
+  width: 90%;
+  padding: 0px 0;
+}
+
 .colonna{
+  display: flex;
   flex-direction: row;
+  flex-wrap: allow;
+  gap: 20px;
 }
 }
