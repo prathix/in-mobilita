@@ -312,16 +312,37 @@ nav{
   padding-bottom: 15px;
 }
 
-@media (orientation: portrait) {
-.container1 {
-  width: 100%;
-  padding: 0px 0;
+@media (orientation: portrait){
+    .container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-.colonna{
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+.container2 {                                                     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.colonna {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.containersezione img {
+    display: block;
+    margin: 0 auto;
+}
+
+.cose_div {
+    text-align: center;
+}
+
+.cose_div img {
+    margin-top: 30vw;
 }
 }
