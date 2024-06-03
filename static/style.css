@@ -311,3 +311,9 @@ nav{
   line-height: 26px;
   padding-bottom: 15px;
 }
+
+@media (orientation: portrait) {
+.colonna{
+  flex-direction: row;
+}
+}
