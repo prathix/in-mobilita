@@ -284,7 +284,6 @@ nav{
   text-align: center;
 }
 
-<<<<<<< HEAD
 /* cos'é */
 
 .container1 {
@@ -311,13 +310,4 @@ nav{
   font-size: 20px;
   line-height: 26px;
   padding-bottom: 15px;
-=======
-.cose_img_div{
-  display: flex;
-  align-items: center;
-  text-align: center;
-  margin: 0 auto;
-  width: 100vw;
-  margin-left: 25vw;
->>>>>>> 55e53c03e638d80b516ab8fa41776ba5f8ddc1a7
 }
