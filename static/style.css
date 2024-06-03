@@ -320,8 +320,6 @@ nav{
 
 .colonna{
   display: flex;
-  flex-direction: row;
-  flex-wrap: allow;
-  gap: 20px;
+  align-items: center;
 }
 }
