@@ -314,12 +314,13 @@ nav{
 
 @media (orientation: portrait) {
 .container1 {
-  width: 90%;
+  width: 100%;
   padding: 0px 0;
 }
 
 .colonna{
   display: flex;
   align-items: center;
+justify-content: center;
 }
 }
