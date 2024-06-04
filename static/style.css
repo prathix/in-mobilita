@@ -339,7 +339,8 @@ nav{
     }
 
     .cose_div{
-        text-align: center
+        text-align: center;
+        margin-top: 25%;
     }
     .cose_div img {
         margin-top: 30vw;
