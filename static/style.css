@@ -272,6 +272,7 @@ nav{
     margin-left: 1vw;
     align-items: center;
     justify-content:center;
+    margin-top: 25%;
 }
 
 #argomenti{
@@ -340,7 +341,6 @@ nav{
 
     .cose_div{
         text-align: center;
-        margin-top: 25%;
     }
     .cose_div img {
         margin-top: 30vw;
