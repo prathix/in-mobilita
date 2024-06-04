@@ -171,14 +171,16 @@
             window.addEventListener('scroll', function() {
                 handleScroll('.partner');
                 handleScroll('.cose');
+                handleScroll('.mappa');
             });
             handleScroll('.partner');
             handleScroll('.cose');
+            handleScroll('.mappa');
         </script>
 
         <br id="big-bro">
         <div id="aula">
-          <h2>Posizione del Mobility Corner</h2>
+          <h2 class="mappa">Posizione del Mobility Corner</h2>
           <img class="mappa" src="{{ url_for('static', filename='images/mappa_aula.jpg') }}">
         </div>
 
