@@ -268,10 +268,8 @@ nav{
 }
 
 .cose_div{
-    display:flex;
     margin-left: 1vw;
-    align-items: center;
-    justify-content:center;
+    text-align: center;
 }
 
 #argomenti{
