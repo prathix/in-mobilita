@@ -271,12 +271,7 @@ nav{
 .cose_div{
     margin-left: 1vw;
     text-align: center;
-}
-
-.containersezione{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    margin-top: 10%;
 }
 #argomenti{
     margin-left: 1vw;
