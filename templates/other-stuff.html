@@ -13,14 +13,16 @@
                 <ul class="sidebar">
                   <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
                   <li><a onclick="location.href='{{ url_for('homes') }}'">Cos'è</a></li>
+                  <li><a onclick="location.href='{{ url_for('homes') }}'">Perchè?</a></li>
                   <li><a href="#" onclick="scrollToGiornate()">Giornate</a></li>
                   <li><a href="#" onclick="scrollToMappa()">Mappa</a></li>
                 </ul>
                 <ul>
                   <li><a onclick="location.href='{{ url_for('homes') }}'">In-Mobilitá</a></li>
                   <li class="hideOnMobile"><a onclick="location.href='{{ url_for('homes') }}'">Cos'è</a></li>
+                  <li class="hideOnMobile"><a onclick="location.href='{{ url_for('homes') }}'">Perchè?</a></li>
                   <li class="hideOnMobile"><a href="#" onclick="scrollToGiornate()">Giornate</a></li>
-                  <li class="hideOnMobile"><a href="#" onclick="scrollToMappa()">Mappa</a></li>
+                  <li class="hideOnMobile last_a_nav"><a href="#" onclick="scrollToMappa()">Mappa</a></li>
                   <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -80,6 +82,7 @@
 
             </script>
         </header>
+        <br id="big-bro">
         <h2 class="partner" class="argomenti" id="argomenti">I nostri incontri:</h2>
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
                 <div class="carousel-indicators">
@@ -117,19 +120,19 @@
                   </div>
                                                           <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Giornata 4</h5>
+                      <h5>Giornata 5</h5>
                     </div>
                     <img src="{{ url_for('static', filename='images/g/g5.jpg') }}" class="d-block w-100" alt="giornata 5">
                   </div>
                                                           <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Giornata 4</h5>
+                      <h5>Giornata 6</h5>
                     </div>
                     <img src="{{ url_for('static', filename='images/g/g6.jpg') }}" class="d-block w-100" alt="giornata 6">
                   </div>
                                                           <div class="carousel-item">
                     <div class="carousel-caption d-none d-md-block">
-                      <h5>Giornata 4</h5>
+                      <h5>Giornata 7</h5>
                     </div>
                     <img src="{{ url_for('static', filename='images/g/g7.jpg') }}" class="d-block w-100" alt="giornata 7">
                   </div>
@@ -179,8 +182,10 @@
         </script>
 
         <br id="big-bro">
+        <br id="big-bro">
         <div id="aula">
           <h2 class="partner">Posizione del Mobility Corner</h2>
+          <br id="big-bro">
           <img class="mappaimg" src="{{ url_for('static', filename='images/mappa_aula.jpg') }}">
         </div>
 
@@ -227,7 +232,7 @@
         Crediti: <br>Programmatore principale:Pratham Madaan 2BI, <br>Altri programmatori:Giordano Peressini 2AI, <br>Referente: Professor Gianmario Pochettini<br> Logo: Samuele Todesco, 2BI<br>
         Preside Istituto: prof.ssa Antonella Sperotto
       </p>
-      <img class="mappa" src="/static/images/piano_infinito.jpg" alt="logo piano infinito" id="logo_piano_infinito">
+      <img src="/static/images/piano_infinito.jpg" alt="logo piano infinito" id="logo_piano_infinito">
     </div>
     <br>
 </footer>

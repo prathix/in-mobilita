@@ -202,11 +202,16 @@ nav{
     font-size: 18px;
   }
   nav a:hover{
-    background-color: #A5F25D;
+    background-color: #C5FF8E;
   }
   nav li:first-child{
     margin-right: auto;
   }
+
+  .last_a_nav {
+    padding-right: 1vw;
+  }
+
   .sidebar{
     position: fixed;
     top: 0; 
@@ -237,6 +242,9 @@ nav{
     }
     .menu-button{
       display: block;
+    }
+    .last_a_nav {
+      padding-right: 0;
     }
   }
 
@@ -315,19 +323,19 @@ nav{
 
 @media (orientation: portrait){
     .container1 {
-        dispay: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .container2 {
-        dispay: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
     .colonna {
-        dispay: flex;
+        display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -351,11 +359,10 @@ nav{
 }
 
 .mappaimg {
-    width: 70vw;
+    width: 55vw;
     height: auto;
     border-radius: 3vw;
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.1);
-}
 }
 
 .mappa {
@@ -365,4 +372,9 @@ nav{
 #perche{
     margin-left: 1vw;
     text-align: center;
+}
+.perche_p {
+  font-size: 20px;
+  line-height: 26px;
+  padding-bottom: 15px;
 }

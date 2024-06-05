@@ -12,14 +12,16 @@
                 <ul class="sidebar">
                   <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
                   <li><a href="#" onclick="scrollToCose()">Cos'è</a></li>
+                  <li><a href="#" onclick="scrollToPerche()">Perchè?</a></li>
                   <li><a href="#" onclick="location.href='{{ url_for('lezioni_partner') }}'">Giornate</a></li>
                   <li><a href="#" onclick="location.href='{{ url_for('lezioni_partner') }}'">Mappa</a></li>
                 </ul>
                 <ul>
-                  <li><a href="#">In-Mobilitá</a></li>
+                  <li><a onclick="location.href='{{ url_for('homes') }}'">In-Mobilitá</a></li>
                   <li class="hideOnMobile"><a href="#" onclick="scrollToCose()">Cos'è</a></li>
+                  <li class="hideOnMobile"><a href="#" onclick="scrollToPerche()">Perchè?</a></li>
                   <li class="hideOnMobile"><a onclick="location.href='{{ url_for('lezioni_partner') }}'">Giornate</a></li>
-                  <li class="hideOnMobile"><a onclick="location.href='{{ url_for('lezioni_partner') }}'">Mappa</a></li>
+                  <li class="hideOnMobile last_a_nav"><a onclick="location.href='{{ url_for('lezioni_partner') }}'">Mappa</a></li>
                   <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
                 </ul>
             </nav>
@@ -47,6 +49,10 @@
                 <script>
                     function scrollToCose() {
                     var coseElement = document.querySelector('.cose');
+                    coseElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    function scrollToPerche() {
+                    var coseElement = document.querySelector('#perche');
                     coseElement.scrollIntoView({ behavior: 'smooth' });
                     }
                     function scrollToPartner() {
@@ -83,7 +89,7 @@
         <br>
 
             <br>
-                </div>
+                
             <br>
 
             <div class="container1">
@@ -92,16 +98,15 @@
 
               <div class="colonna">
                 <div class="containersezione">
-                  <img  src="{{ url_for('static', filename='images/20240201_112952.jpg') }}" class="immaginine">
+                  <img  src="{{ url_for('static', filename='images/immagine sito in mobilità.jpg') }}" class="immaginine">
                 </div>
               </div>
 
               <div class="colonna">
                 <div class="containersezione">
                   <div class="cose_div">
-                    <h2 class="cose">Cos'è in-mobilità?</h2><br>
-                      <p id="cose_p">In-mobilità è il progetto a cui stiamo partecipando per la creazione di un’aula scolastica all'aperto, chiamata mobility corner, in collaborazione con gli architetti di Camposaz e molte altre associazioni
-</p>
+                    <h2 class="cose partner">Cos'è in-mobilità?</h2><br>
+                      <p id="cose_p">In-mobilità è il progetto a cui stiamo partecipando per la creazione di un’aula scolastica all'aperto, chiamata mobility corner, in collaborazione con gli architetti di Camposaz e molte altre associazioni</p>
                     </div>
                 </div>
               </div>
@@ -109,10 +114,10 @@
               </div>
               <br id="big-bro">
               <div id="perche">
-                  <h2>Perchè?</h2>
-                  <p>Ci è stato presentato il progetto in-mobilità renderci protagonisti della scuola e del mondo in cui viviamo attraverso questo progetto ci è stato dato modo di comprendere l'ambiente scolastico in cui viviamo di come lo viviamo e di come vorremmo che fosse </p>
+                  <h2 class="partner">Perchè?</h2><br>
+                  <p class="perche_p">Ci è stato presentato il progetto in-mobilità renderci protagonisti della scuola e del mondo in cui viviamo attraverso questo progetto ci è stato dato modo di comprendere l'ambiente scolastico in cui viviamo di come lo viviamo e di come vorremmo che fosse </p>
               </div>
-
+            </div>
 
 
             <br id="big-bro">
@@ -125,13 +130,13 @@
                         - Montecchio: <a href="http://silvioceccato.edu.it/">IIS Silvio Ceccato</a><br>
                         - Vicenza: ITIS Rossi <br>
                         - Schio: Liceo Tron-Zanella <br>
-                        - Vicenza: IIS Canova <br>
+                        - Vicenza: IIS Canova<br>
                         - Thiene: ITET Aulo Ceccato <br>
                       </p>
                   <h2 class="partner">Partner e organizzazioni operative:</h2>
                   <p>
                       - Con il supporto della Fondazione CariVerona<br>
-                      - <a href="https://citycampusvicenza.it/">https://citycampusvicenza.it/</a>City Campus<br>
+                      - <a href="https://citycampusvicenza.it/">City Campus</a><br>
                       - Cooperativa Urbana<br>
                       - Referente mobilità: civi&co e veloCittà<br>
                       - Referente Mobility Corner: Camposaz<br>
@@ -161,5 +166,6 @@
     </div>
     <br>
 </footer>
-    </body>
+
+</body>
 </html>
