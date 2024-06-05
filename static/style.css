@@ -273,12 +273,11 @@ nav{
     text-align: center;
 }
 
-.cose_div p{
+.containersezione{
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 #argomenti{
     margin-left: 1vw;
     text-align: center;
