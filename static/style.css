@@ -271,6 +271,9 @@ nav{
 .cose_div{
     margin-left: 1vw;
     text-align: center;
+}
+
+.cose_div p{
     display: flex;
     justify-content: center;
     align-items: center;
