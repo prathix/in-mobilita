@@ -49,15 +49,15 @@
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                 <script>
                     function scrollToCose() {
-                    var coseElement = document.querySelector('.cose');
+                    var coseElement = document.querySelector('#scrollcose');
                     coseElement.scrollIntoView({ behavior: 'smooth' });
                     }
                     function scrollToMappa() {
-                    var coseElement = document.querySelector('#aula');
+                    var coseElement = document.querySelector('#scrollmappa');
                     coseElement.scrollIntoView({ behavior: 'smooth' });
                     }
                     function scrollToGiornate() {
-                    var coseElement = document.querySelector('#carouselExampleDark');
+                    var coseElement = document.querySelector('#scrollgiornate');
                     coseElement.scrollIntoView({ behavior: 'smooth' });
                     }
                     $(document).ready(function() {
@@ -82,6 +82,7 @@
 
             </script>
         </header>
+        <h2 class="testobianco" id="scrollgiornate">-</h2>
         <br id="big-bro">
         <h2 class="partner" class="argomenti" id="argomenti">I nostri incontri:</h2>
             <div id="carouselExampleDark" class="carousel carousel-dark slide">
@@ -182,6 +183,7 @@
         </script>
 
         <br id="big-bro">
+        <h2 class="testobianco" id="scrollmappa">-</h2>
         <br id="big-bro">
         <div id="aula">
           <h2 class="partner">Posizione del Mobility Corner</h2>
